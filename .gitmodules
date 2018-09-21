@@ -1,3 +1,12 @@
-[submodule ".src/reslate"]
-	path = .src/reslate
-	url = https://github.com/lunixbochs/reslate.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:syl20bnr/spacemacs.git
+[submodule ".tmux"]
+	path = .tmux
+	url = git@github.com:rjhilgefort/.tmux.git
+[submodule ".src/miro-windows-manager"]
+	path = .src/miro-windows-manager
+	url = git@github.com:miromannino/miro-windows-manager.git
+[submodule ".spacemacs.d"]
+	path = .spacemacs.d
+	url = git@github.com:rjhilgefort/.spacemacs.git

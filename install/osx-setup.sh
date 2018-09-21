@@ -23,9 +23,16 @@ brews=(
   antigen
   fasd
   ag
+  ranger
+  pandoc
 )
 echo "installing brews..."
 brew install ${brews[@]}
+
+### Emacs
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 
 ### Casks
 casks=(
@@ -40,7 +47,6 @@ casks=(
   skype
   1password
   slack
-  slate
   synology-drive
   notion
   keybase
@@ -49,9 +55,13 @@ casks=(
   appcleaner
   dash2
   mailbutler
-  amethyst
   goofy
-  pocket
+  gitter
+  istat-menus
+  karabiner-elements
+  font-fira-code
+  hammerspoon
+  cacher
 
   # Stealth Startup
   homebrew/cask-drivers/yubico-authenticator
@@ -105,3 +115,8 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 ### Dock
 # align to side
 killall Dock
+
+### NPM
+npm install -g tern
+
+
