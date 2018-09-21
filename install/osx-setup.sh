@@ -25,6 +25,8 @@ brews=(
   ag
   ranger
   pandoc
+  mongodb
+  redis
 )
 echo "installing brews..."
 brew install ${brews[@]}
@@ -62,7 +64,6 @@ casks=(
   font-fira-code
   hammerspoon
   cacher
-
   # Stealth Startup
   homebrew/cask-drivers/yubico-authenticator
   gpg-suite
@@ -105,6 +106,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Internal capslock to control
 # defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 # defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+# Change "Move focus to next window" to Ctrl-Tab
 
 ### Trackpad
 # Three finger drag

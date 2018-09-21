@@ -27,6 +27,10 @@ antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-se
 # antigen theme robbyrussell
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
+# NVM bundle
+export NVM_LAZY_LOAD=true
+antigen bundle lukechilds/zsh-nvm
+antigen bundle Sparragus/zsh-auto-nvm-use
 
 # Tell Antigen that you're done.
 antigen apply
@@ -37,15 +41,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Load custom aliases
 [[ -s "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
-
-# NVM bundle
-export NVM_LAZY_LOAD=true
-antigen bundle lukechilds/zsh-nvm
-antigen bundle Sparragus/zsh-auto-nvm-use
-# Load NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# Load env stuffz 
+[[ -s "$HOME/.zsh_env" ]] && source "$HOME/.zsh_env"
 
 # Up the default ulimit
 ulimit -n 2048
