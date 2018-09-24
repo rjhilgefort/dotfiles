@@ -27,6 +27,7 @@ brews=(
   pandoc
   mongodb
   redis
+  "yarn --without-node"
 )
 echo "installing brews..."
 brew install ${brews[@]}
@@ -64,6 +65,8 @@ casks=(
   font-fira-code
   hammerspoon
   cacher
+  battle-net
+  expressvpn
   # Stealth Startup
   homebrew/cask-drivers/yubico-authenticator
   gpg-suite
@@ -84,6 +87,8 @@ app_store_packages=(
   # Pocket
   # Forecast Bar
   # Gifox
+  # Airmail3
+  # Fantastical
 )
 echo "installing apps with App Store..."
 mas install ${app_store_packages[@]}
@@ -120,5 +125,4 @@ killall Dock
 
 ### NPM
 npm install -g tern
-
-
+npm install -g avn avn-nvm # https://github.com/wbyoung/avn

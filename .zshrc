@@ -19,18 +19,24 @@ antigen bundle git-flow
 antigen bundle npm
 antigen bundle osx
 antigen bundle web-search
+# antigen bundle vi-mode
 antigen bundle z
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
 
 # Theme
 # antigen theme robbyrussell
-antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+antigen theme refined # pure
+# antigen theme powerlevel9k # TODO: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
+# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship # NOTE: A little slow to paint the git prompt
 
 # NVM bundle
 export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 antigen bundle Sparragus/zsh-auto-nvm-use
+
+# Load avn
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
 
 # Tell Antigen that you're done.
 antigen apply
