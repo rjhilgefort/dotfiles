@@ -14,11 +14,14 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
-# THE most common commands get a short alias
-alias lc="colorsls -r"
+# colorls - https://github.com/athityakumar/colorls
+alias lca="colorls -lA --sd"
+alias lcs="colorls -r"
+
 # General
 alias cl="clear"
 alias g="git"
+
 # Homebrew
 alias b="brew"
 alias bs="brew search"
@@ -26,31 +29,31 @@ alias bi="brew install"
 alias bc="brew cask"
 alias bcs="brew cask search"
 alias bci="brew cask install"
-# NPM
+
+# NPM / Yarn
 alias n="npm"
-alias ni="npm install"
-alias nis="npm install --save"
-alias nisd="npm install --save-dev"
-alias nr="npm run"
-alias nrs="npm run start"
-alias nrl="npm run lint"
-alias nrlf="npm run lint:fix"
-alias nrlw="npm run lint:watch"
-alias nrlc="npm run lint:changed"
-alias nrf="npm run flow"
-alias nrt="npm run test"
-# Yarn
 alias y="yarn"
+alias ni="npm install"
 alias yi="yarn install"
+alias nis="npm install --save"
 alias ya="yarn add"
+alias nisd="npm install --save-dev"
 alias yad="yarn add --dev"
+alias nr="npm run"
 alias yr="yarn run"
+alias nrs="npm run start"
 alias yrs="yarn run start"
+alias nrl="npm run lint"
 alias yrl="yarn run lint"
+alias nrlf="npm run lint:fix"
 alias yrlf="yarn run lint:fix"
+alias nrlw="npm run lint:watch"
 alias yrlw="yarn run lint:watch"
+alias nrlc="npm run lint:changed"
 alias yrlc="yarn run lint:changed"
+alias nrt="npm run test"
 alias yrt="yarn run test"
+
 # Emacs
 alias em="emacs -nw"
 alias ed="emacs --daemon"
@@ -142,3 +145,7 @@ alias r='ranger'
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
 alias git-merge-complete='git add -A && git commit --no-edit && git pp'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git pp'
+
+# gitconfig switching
+alias gitconfig-rjh='ln -sf ~/dotfiles/.gitconfig.rjhilgefort ~/.gitconfig && echo "Current user: $(git config user.email)"'
+alias gitconfig-ss='ln -sf ~/dotfiles/.gitconfig.oramified-fcc ~/.gitconfig && echo "Current user: $(git config user.email)"'

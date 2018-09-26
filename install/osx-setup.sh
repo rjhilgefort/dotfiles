@@ -14,6 +14,8 @@ brew tap caskroom/fonts
 
 ### Brews
 brews=(
+  vim
+  python@2
   git
   tig
   tmux
@@ -28,6 +30,12 @@ brews=(
   mongodb
   redis
   "yarn --without-node"
+  ruby
+  git-extras
+  # ShapeShift
+  ansible
+  pass
+  vault
 )
 echo "installing brews..."
 brew install ${brews[@]}
@@ -67,7 +75,8 @@ casks=(
   cacher
   battle-net
   expressvpn
-  # Stealth Startup
+  rescuetime
+  # ShapeShift
   homebrew/cask-drivers/yubico-authenticator
   gpg-suite
 )
@@ -126,3 +135,13 @@ killall Dock
 ### NPM
 npm install -g tern
 npm install -g avn avn-nvm # https://github.com/wbyoung/avn
+
+### Ruby Gems
+# https://github.com/athityakumar/colorls#installation
+sudo gem install colorls
+
+### Python / PIP
+sudo easy_install pip
+# Ansible
+sudo pip install ansible boto boto3 botocore six ansible-modules-hashivault
+sudo pip install passlib

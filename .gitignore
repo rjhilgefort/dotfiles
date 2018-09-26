@@ -1,2 +1,4 @@
 .DS_Store
 .config/configstore/update-notifier-npm.json
+.aws/credentials
+.zsh_secret

@@ -1,10 +1,10 @@
-# OSX antigen file
+### OSX antigen file
 source /usr/local/share/antigen/antigen.zsh
 
-# Load the oh-my-zsh's library.
+### Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
+### Bundles
 antigen bundle git
 antigen bundle heroku
 antigen bundle pip
@@ -19,12 +19,13 @@ antigen bundle git-flow
 antigen bundle npm
 antigen bundle osx
 antigen bundle web-search
-# antigen bundle vi-mode
+antigen bundle vi-mode
 antigen bundle z
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
+antigen bundle zdharma/history-search-multi-word
 
-# Theme
+### Theme
 # antigen theme robbyrussell
 antigen theme refined # pure
 # antigen theme powerlevel9k # TODO: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
@@ -35,9 +36,6 @@ export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 antigen bundle Sparragus/zsh-auto-nvm-use
 
-# Load avn
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
-
 # Tell Antigen that you're done.
 antigen apply
 
@@ -45,10 +43,10 @@ antigen apply
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# Load custom aliases
+# Load broken out config files
 [[ -s "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
-# Load env stuffz 
 [[ -s "$HOME/.zsh_env" ]] && source "$HOME/.zsh_env"
+[[ -s "$HOME/.zsh_secret" ]] && source "$HOME/.zsh_secret"
 
 # Up the default ulimit
 ulimit -n 2048
@@ -56,5 +54,8 @@ ulimit -n 2048
 # fasd
 eval "$(fasd --init auto)"
 
+# colorls - https://github.com/athityakumar/colorls
+source $(dirname $(gem which colorls))/tab_complete.sh
+
 # Always list after cd
-cd() { builtin cd "$@"; ls -la; }
+cd() { builtin cd "$@"; ls -a; }
