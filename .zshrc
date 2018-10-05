@@ -58,4 +58,4 @@ eval "$(fasd --init auto)"
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Always list after cd
-cd() { builtin cd "$@"; ls -a; }
+cd() { builtin cd "$@"; colorls -A --sort-dirs; }

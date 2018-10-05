@@ -32,6 +32,7 @@ brews=(
   "yarn --without-node"
   ruby
   git-extras
+  most
   # ShapeShift
   ansible
   pass
@@ -76,9 +77,15 @@ casks=(
   battle-net
   expressvpn
   rescuetime
+  font-firacode-nerd-font
+  macdown
+  docker
+  # Maaaaaybe
+  vivaldi
   # ShapeShift
   homebrew/cask-drivers/yubico-authenticator
   gpg-suite
+  exodus
 )
 echo "installing apps with Cask..."
 brew cask install ${casks[@]}
@@ -135,6 +142,8 @@ killall Dock
 ### NPM
 npm install -g tern
 npm install -g avn avn-nvm # https://github.com/wbyoung/avn
+npm install -g node-gyp
+npm install -g vmd # https://github.com/yoshuawuyts/vmd
 
 ### Ruby Gems
 # https://github.com/athityakumar/colorls#installation

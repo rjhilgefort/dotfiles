@@ -12,11 +12,31 @@ alias reload="exec $SHELL -l"
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+alias copy="tr -d '\n' | pbcopy"
 
-# colorls - https://github.com/athityakumar/colorls
-alias lca="colorls -lA --sd"
-alias lcs="colorls -r"
+### colorls - https://github.com/athityakumar/colorls
+# Move standard ls
+alias ols="ls"
+# Base formats
+alias ls="colorls -A"           # short, multi-line
+alias ll="colorls -1A"          # list, 1 per line
+alias ld="ll"                   # ^, NOTE: Trying to move to this for alternate hand commands
+alias la="colorls -lA"          # list w/ info
+# [d] Sort output with directories first
+alias lsd="ls --sort-dirs"
+alias lld="ll --sort-dirs"
+alias ldd="ld --sort-dirs"
+alias lad="la --sort-dirs"
+# [t] Sort output with recent modified first
+alias lst="ls -t"
+alias llt="ll -t"
+alias ldt="ld -t"
+alias lat="la -t"
+# [g] Add git status of each item in output
+alias lsg="ls --git-status"
+alias llg="ll --git-status"
+alias ldg="ld --git-status"
+alias lag="la --git-status"
 
 # General
 alias cl="clear"
@@ -145,7 +165,16 @@ alias r='ranger'
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
 alias git-merge-complete='git add -A && git commit --no-edit && git pp'
 alias git-commit-cleanup='git add -A && git commit -m "Cleanup, tweaks, linter fixes" && git pp'
+alias git-whoami='echo "Current user: $(git config user.email)"'
 
 # gitconfig switching
-alias gitconfig-rjh='ln -sf ~/dotfiles/.gitconfig.rjhilgefort ~/.gitconfig && echo "Current user: $(git config user.email)"'
-alias gitconfig-ss='ln -sf ~/dotfiles/.gitconfig.oramified-fcc ~/.gitconfig && echo "Current user: $(git config user.email)"'
+git-config-rjh() {
+  ln -sf ~/dotfiles/.gitconfig.rjhilgefort ~/.gitconfig
+  killall gpg-agent && echo 'gpg-agent stopped'
+  git-whoami
+}
+git-config-ss() {
+  ln -sf ~/dotfiles/.gitconfig.oramified-fcc ~/.gitconfig
+  gpgconf --launch gpg-agent && echo 'gpg-agent started'
+  git-whoami
+}
