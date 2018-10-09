@@ -33,6 +33,8 @@ brews=(
   ruby
   git-extras
   most
+  mas
+  postgresql
   # ShapeShift
   ansible
   pass
@@ -44,7 +46,6 @@ brew install ${brews[@]}
 ### Emacs
 brew tap d12frosted/emacs-plus
 brew install emacs-plus
-ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
 
 ### Casks
 casks=(
@@ -59,7 +60,8 @@ casks=(
   skype
   1password
   slack
-  synology-drive
+  # synology-drive #TODO This doesn't exist
+  # davinci-resolve #TODO This doesn't exist # https://sw.blackmagicdesign.com/DaVinciResolve/v15.1.1/DaVinci_Resolve_15.1.1_Mac.zip?Key-Pair-Id=APKAJTKA3ZJMJRQITVEA&Signature=Hbe2X/xt7Zc7bsh+Q/5vDVEUB+xryG64zLL5GJ1rcgXW4iEvVt64Letc3h/T9N7qYcjlprXcE32AsE1+IZxytTavN9SRPkTWCkc87qMknWrvfsV6HKX/e0BIXfqOwUzEhHbJIdPXeKihTEjbXjxdI3B3jH+GGb0gO+UVh8estfAlPS934Lka4gj5yk1sXKo5qRM3PALjaloRauQV20K2Xvuh3rSWjLqnOxUOjZcaPF7+vm2l5mcJb7fEhqVpiyHfYnBITg/cnUmfIBfVPYeA6bn37E8YnAOrZ9PCyLhX/ZY4oHC8Fp3iDVsAkunR6cpueGIWnKFIA8k8HiNOCY2dMA==&Expires=1538971674
   notion
   keybase
   rocket
@@ -69,7 +71,7 @@ casks=(
   mailbutler
   goofy
   gitter
-  istat-menus
+  istat-menus5
   karabiner-elements
   font-fira-code
   hammerspoon
@@ -80,6 +82,7 @@ casks=(
   font-firacode-nerd-font
   macdown
   docker
+  discord
   # Maaaaaybe
   vivaldi
   # ShapeShift
@@ -137,13 +140,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ### Dock
 # align to side
-killall Dock
-
-### NPM
-npm install -g tern
-npm install -g avn avn-nvm # https://github.com/wbyoung/avn
-npm install -g node-gyp
-npm install -g vmd # https://github.com/yoshuawuyts/vmd
+# killall Dock
 
 ### Ruby Gems
 # https://github.com/athityakumar/colorls#installation
