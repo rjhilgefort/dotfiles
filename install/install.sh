@@ -1,3 +1,2 @@
-./osx-setup.sh
-./synology-store.sh
-./sym-links.sh
+./osx.sh
+./app-steup.sh
