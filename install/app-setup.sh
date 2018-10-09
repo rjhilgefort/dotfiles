@@ -23,6 +23,9 @@ chsh -s $(which zsh)
 exec /bin/zsh -l # reload shell
 compaudit | xargs chmod g-w # Fixes: "zsh compinit: insecure directories, run compaudit for list"
 
+### Git
+ln -sf ~/dotfiles/.gitconfig.rjhilgefort ~/.gitconfig
+
 ### Tmux
 ln -sf ~/dotfiles/.tmux ~/.tmux
 ln -sf ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf
