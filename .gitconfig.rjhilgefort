@@ -41,7 +41,7 @@
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null && git push origin -u \"$1\" || git checkout \"$1\"; }; f"
 
 	# Show verbose output about tags, branches or remotes
-	tags = tag -l --sort=v:refname
+	tags = !git --no-pager tag -l --sort=v:refname
 	remotes = remote -v
 	branches = branch -a
 	branches-merged = branch --merged
