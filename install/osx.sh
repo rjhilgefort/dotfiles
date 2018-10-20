@@ -83,6 +83,7 @@ casks=(
   macdown
   docker
   discord
+  yakyak
   # Maaaaaybe
   vivaldi
   # ShapeShift
