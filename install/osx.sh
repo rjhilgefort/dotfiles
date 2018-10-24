@@ -88,6 +88,7 @@ casks=(
   # ShapeShift
   homebrew/cask-drivers/yubico-authenticator
   gpg-suite
+  tunnelblick
   exodus
 )
 echo "installing apps with Cask..."
