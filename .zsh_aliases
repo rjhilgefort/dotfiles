@@ -144,13 +144,6 @@ d-exec() { docker exec -it $1 bash; }
 alias dc='docker-compose'
 
 # ssh shortcuts
-alias ssh-nas='ssh -p 24 rjhilgefort@192.168.86.100'
-alias ssh-gd='ssh robhilgefort@97.74.249.1'
-alias ssh-mt='ssh robhilgefort.com@s160575.gridserver.com'
-alias ssh-do-personal='ssh -p 4444 rjhilgefort@192.241.245.99'
-
-alias ssh-charter-bu='ssh ubuntu@ec2-18-188-21-221.us-east-2.compute.amazonaws.com -i DynEx-Key.pem'
-
 # ssh tunnel on localhost:{localPort} to {remote} for {remoteServiceExposedonPort}
 # alias ssh-tunnel='ssh -f {user}@{remote} -L {localPort}:localhost:{remotePort} -i /Users/rjhilgefort/.ssh/id_rsa -N'
 alias ssh-do-personal-tunnel='ssh -f -p 4444 rjhilgefort@192.241.245.99 -L 27019:localhost:27017 -i /Users/rjhilgefort/.ssh/id_rsa -N'
@@ -160,6 +153,9 @@ alias t='tig status'
 
 # ranger
 alias r='ranger'
+
+# pm2
+alias pm='pm2'
 
 # git
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"
