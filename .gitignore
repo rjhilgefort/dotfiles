@@ -1,4 +1,6 @@
 .DS_Store
 .config/configstore/update-notifier-npm.json
+.config/configstore/update-notifier-gatsby-cli.json
+.config/yarn
 .aws/credentials
 .zsh_secret
