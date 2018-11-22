@@ -111,7 +111,11 @@ alias afk='afk-screen'
 alias appsoninternet='sudo lsof -P -i -n | cut -f 1 -d " " | uniq'
 
 # Flush DNS
-alias flush-dns='sudo killall -HUP mDNSResponder'
+flush-dns() {
+  sudo killall -HUP mDNSResponder
+  sudo killall mDNSResponderHelper
+  sudo dscacheutil -flushcache
+}
 
 # list what ports are currently open
 alias listopenports='sudo lsof -i -P | grep -i "listen"'
