@@ -73,6 +73,8 @@ alias nrlc="npm run lint:changed"
 alias yrlc="yarn run lint:changed"
 alias nrt="npm run test"
 alias yrt="yarn run test"
+alias nrtw="npm run test:watch"
+alias yrtw="yarn run test:watch"
 
 # Emacs
 alias em="emacs -nw"
