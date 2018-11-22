@@ -1,0 +1,31 @@
+{
+  "apps" : [
+    {
+      "name": "journal",
+      "cwd": "./rjhilgefort/journal",
+      "script": "./node_modules/.bin/gatsby",
+      "args": "develop --port 8001",
+      "instances": 1,
+      "log_date_format": "YY-MM-DD HH:mm:ss.SSS",
+      "kill_timeout": 30000
+    },
+    {
+      "name": "bright-future",
+      "cwd": "./rjhilgefort/bright-future",
+      "script": "./node_modules/.bin/gatsby",
+      "args": "develop --port 8003",
+      "instances": 1,
+      "log_date_format": "YY-MM-DD HH:mm:ss.SSS",
+      "kill_timeout": 30000
+    },
+    {
+      "name": "hilgefort-api",
+      "cwd": "./rjhilgefort/hilgefort-api",
+      "script": "./node_modules/.bin/onchange",
+      "args": " '**/*.ts' -i -v -- ./node_modules/.bin/ts-node --pretty ./src/index.ts",
+      "instances": 1,
+      "log_date_format": "YY-MM-DD HH:mm:ss.SSS",
+      "kill_timeout": 30000
+    },
+  ]
+}
