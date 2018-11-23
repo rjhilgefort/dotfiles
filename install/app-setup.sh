@@ -56,3 +56,5 @@ cp -a ~/dotfiles/.src/miro-windows-manager/MiroWindowsManager.spoon ~/.hammerspo
 ln -sf ~/dotfiles/.config ~/.config
 ln -sf ~/dotfiles/.avnrc ~/.avnrc
 ln -sf ~/dotfiles/bin ~/bin
+ln -sf ~/dotfiles/pm2.json ~/pm2.json
+
