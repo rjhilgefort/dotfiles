@@ -6,8 +6,12 @@
 	url = git@github.com:rjhilgefort/.tmux.git
 [submodule ".src/miro-windows-manager"]
 	path = .src/miro-windows-manager
-	url = git@github.com:miromannino/miro-windows-manager.git
-	branch = v1.2
+	# url = git@github.com:miromannino/miro-windows-manager.git
+	# branch = v1.2
+	# TODO: Using fork until issue is merged:
+	# https://github.com/miromannino/miro-windows-manager/pull/9
+	url = git@github.com:matthewfallshaw/miro-windows-manager.git
+	branch = master
 [submodule ".spacemacs.d"]
 	path = .spacemacs.d
 	url = git@github.com:rjhilgefort/.spacemacs.git
