@@ -49,8 +49,7 @@ npm install -g vmd # https://github.com/yoshuawuyts/vmd
 ### Hammerspoon
 rm -rf ~/.hammerspoon
 ln -sf ~/dotfiles/.hammerspoon ~/.hammerspoon
-# TODO: Make this a symlink. It wasn't working when I tried
-cp -a ~/dotfiles/.src/miro-windows-manager/MiroWindowsManager.spoon ~/.hammerspoon/Spoons/
+ln -sf ~/dotfiles/.src/miro-windows-manager/MiroWindowsManager.spoon ~/dotfiles/.hammerspoon/Spoons
 
 # Other/Misc
 ln -sf ~/dotfiles/.config ~/.config
