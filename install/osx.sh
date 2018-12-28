@@ -35,6 +35,8 @@ brews=(
   most
   mas
   postgresql
+  proxychains-ng             # https://github.com/rofl0r/proxychains-ng
+  mitmproxy                  # https://mitmproxy.org/
   # ShapeShift
   ansible
   pass

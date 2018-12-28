@@ -84,6 +84,7 @@ alias e="ec"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleanup-node_modules="find . -name 'node_modules' -exec rm -rf '{}' +"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -162,6 +163,9 @@ alias r='ranger'
 
 # pm2
 alias pm='pm2'
+
+# proxychains4
+alias proxychains4='proxychains'
 
 # git
 alias git-submodule-list="grep path .gitmodules | sed 's/.*= //'"

@@ -1,0 +1,77 @@
+[
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    // From default settings
+    // {
+    //     "key": "ctrl+h",
+    //     "command": "list.collapse",
+    //     "when": "listFocus && !inputFocus"
+    // },
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "list.expand",
+    //     "when": "listFocus && !inputFocus"
+    // },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "list.focusDown",
+    //     "when": "listFocus && !inputFocus"
+    // },
+    // {
+    //     "key": "ctrl+k",
+    //     "command": "list.focusUp",
+    //     "when": "listFocus && !inputFocus"
+    // }
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "shift+u",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+u",
+        "command": "-redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+u",
+        "command": "default:redo"
+    }
+]
