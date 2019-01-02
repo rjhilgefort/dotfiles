@@ -59,19 +59,16 @@
     {
         "key": "ctrl+'",
         "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "shift+u",
-        "command": "redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+u",
-        "command": "-redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+u",
-        "command": "default:redo"
     }
+    // TODO: Need to only have this active in Normal Mode. Activating this disallows "U"
+    // {
+    //     "key": "shift+u",
+    //     "command": "redo",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "shift+u",
+    //     "command": "-redo",
+    //     "when": "textInputFocus && !editorReadonly"
+    // }
 ]

@@ -1126,7 +1126,22 @@
                     "args": []
                 }
             ]
-        }
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.showHover",
+                    "args": []
+                }
+            ]
+        },
+
     ],
     "vim.insertModeKeyBindings": [
         {
