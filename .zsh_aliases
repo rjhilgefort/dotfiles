@@ -197,3 +197,8 @@ mkcd () {
     *) mkdir -p "./$1" && cd "./$1";;
   esac
 }
+
+# https://cht.sh
+cheat() {
+    curl cht.sh/$1
+}

@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "settings.cycle": [{
         "id": "lineNumbers",
@@ -21,10 +21,7 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before": [
-                "<leader>",
-                "<space>"
-            ],
+            "before": [ "<leader>", "<space>" ],
             "after": [],
             "commands": [
                 {
@@ -34,10 +31,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "<tab>"
-            ],
+            "before": [ "<leader>", "<tab>" ],
             "after": [],
             "commands": [
                 {
@@ -47,11 +41,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                ";",
-                ";"
-            ],
+            "before": [ "<leader>", ";", ";" ],
             "after": [],
             "commands": [
                 {
@@ -61,10 +51,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "'"
-            ],
+            "before": [ "<leader>", "'" ],
             "after": [],
             "commands": [
                 {
@@ -74,10 +61,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "/"
-            ],
+            "before": [ "<leader>", "/" ],
             "after": [],
             "commands": [
                 {
@@ -87,10 +71,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "1"
-            ],
+            "before": [ "<leader>", "1" ],
             "after": [],
             "commands": [
                 {
@@ -100,10 +81,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "2"
-            ],
+            "before": [ "<leader>", "2" ],
             "after": [],
             "commands": [
                 {
@@ -113,10 +91,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "3"
-            ],
+            "before": [ "<leader>", "3" ],
             "after": [],
             "commands": [
                 {
@@ -126,10 +101,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "4"
-            ],
+            "before": [ "<leader>", "4" ],
             "after": [],
             "commands": [
                 {
@@ -139,10 +111,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "5"
-            ],
+            "before": [ "<leader>", "5" ],
             "after": [],
             "commands": [
                 {
@@ -152,10 +121,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "6"
-            ],
+            "before": [ "<leader>", "6" ],
             "after": [],
             "commands": [
                 {
@@ -165,10 +131,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "7"
-            ],
+            "before": [ "<leader>", "7" ],
             "after": [],
             "commands": [
                 {
@@ -178,10 +141,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "8"
-            ],
+            "before": [ "<leader>", "8" ],
             "after": [],
             "commands": [
                 {
@@ -191,11 +151,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "b"
-            ],
+            "before": [ "<leader>", "b", "b" ],
             "after": [],
             "commands": [
                 {
@@ -205,11 +161,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "d"
-            ],
+            "before": [ "<leader>", "b", "d" ],
             "after": [],
             "commands": [
                 {
@@ -219,11 +171,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "n"
-            ],
+            "before": [ "<leader>", "b", "n" ],
             "after": [],
             "commands": [
                 {
@@ -233,11 +181,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "p"
-            ],
+            "before": [ "<leader>", "b", "p" ],
             "after": [],
             "commands": [
                 {
@@ -247,11 +191,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "s"
-            ],
+            "before": [ "<leader>", "b", "s" ],
             "after": [],
             "commands": [
                 {
@@ -261,11 +201,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "l"
-            ],
+            "before": [ "<leader>", "e", "l" ],
             "after": [],
             "commands": [
                 {
@@ -275,11 +211,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "n"
-            ],
+            "before": [ "<leader>", "e", "n" ],
             "after": [],
             "commands": [
                 {
@@ -289,11 +221,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "p"
-            ],
+            "before": [ "<leader>", "e", "p" ],
             "after": [],
             "commands": [
                 {
@@ -303,11 +231,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "e"
-            ],
+            "before": [ "<leader>", "f", "e" ],
             "after": [],
             "commands": [
                 {
@@ -317,11 +241,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "f"
-            ],
+            "before": [ "<leader>", "f", "f" ],
             "after": [],
             "commands": [
                 {
@@ -331,11 +251,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "r"
-            ],
+            "before": [ "<leader>", "f", "r" ],
             "after": [],
             "commands": [
                 {
@@ -345,11 +261,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "s"
-            ],
+            "before": [ "<leader>", "f", "s" ],
             "after": [],
             "commands": [
                 {
@@ -359,11 +271,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "t"
-            ],
+            "before": [ "<leader>", "f", "t" ],
             "after": [],
             "commands": [
                 {
@@ -373,11 +281,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "y"
-            ],
+            "before": [ "<leader>", "f", "y" ],
             "after": [],
             "commands": [
                 {
@@ -387,11 +291,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "b"
-            ],
+            "before": [ "<leader>", "g", "b" ],
             "after": [],
             "commands": [
                 {
@@ -401,11 +301,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "c"
-            ],
+            "before": [ "<leader>", "g", "c" ],
             "after": [],
             "commands": [
                 {
@@ -415,11 +311,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "d"
-            ],
+            "before": [ "<leader>", "g", "d" ],
             "after": [],
             "commands": [
                 {
@@ -429,11 +321,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "f"
-            ],
+            "before": [ "<leader>", "g", "f" ],
             "after": [],
             "commands": [
                 {
@@ -443,11 +331,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "i"
-            ],
+            "before": [ "<leader>", "g", "i" ],
             "after": [],
             "commands": [
                 {
@@ -457,11 +341,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "m"
-            ],
+            "before": [ "<leader>", "g", "m" ],
             "after": [],
             "commands": [
                 {
@@ -471,11 +351,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "p"
-            ],
+            "before": [ "<leader>", "g", "p" ],
             "after": [],
             "commands": [
                 {
@@ -485,11 +361,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "s"
-            ],
+            "before": [ "<leader>", "g", "s" ],
             "after": [],
             "commands": [
                 {
@@ -499,11 +371,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "S"
-            ],
+            "before": [ "<leader>", "g", "S" ],
             "after": [],
             "commands": [
                 {
@@ -513,11 +381,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "U"
-            ],
+            "before": [ "<leader>", "g", "U" ],
             "after": [],
             "commands": [
                 {
@@ -527,11 +391,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "h",
-                "d"
-            ],
+            "before": [ "<leader>", "h", "d" ],
             "after": [],
             "commands": [
                 {
@@ -541,11 +401,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "i",
-                "s"
-            ],
+            "before": [ "<leader>", "i", "s" ],
             "after": [],
             "commands": [
                 {
@@ -555,11 +411,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "j",
-                "="
-            ],
+            "before": [ "<leader>", "j", "=" ],
             "after": [],
             "commands": [
                 {
@@ -569,54 +421,19 @@
             ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "j"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "s"
-            ]
+            "before": [ "leader", "j", "j" ],
+            "after": [ "leader", "leader", "s" ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "l"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "leader",
-                "b",
-                "d",
-                "j",
-                "k"
-            ]
+            "before": [ "leader", "j", "l" ],
+            "after": [ "leader", "leader", "leader", "b", "d", "j", "k" ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "w"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "leader",
-                "b",
-                "d",
-                "w"
-            ]
+            "before": [ "leader", "j", "w" ],
+            "after": [ "leader", "leader", "leader", "b", "d", "w" ]
         },
         {
-            "before": [
-                "<leader>",
-                "l",
-                "d"
-            ],
+            "before": [ "<leader>", "l", "d" ],
             "after": [],
             "commands": [
                 {
@@ -626,11 +443,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "f"
-            ],
+            "before": [ "<leader>", "p", "f" ],
             "after": [],
             "commands": [
                 {
@@ -640,11 +453,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "l"
-            ],
+            "before": [ "<leader>", "p", "l" ],
             "after": [],
             "commands": [
                 {
@@ -654,11 +463,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "p"
-            ],
+            "before": [ "<leader>", "p", "p" ],
             "after": [],
             "commands": [
                 {
@@ -668,11 +473,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "t"
-            ],
+            "before": [ "<leader>", "p", "t" ],
             "after": [],
             "commands": [
                 {
@@ -682,11 +483,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "f"
-            ],
+            "before": [ "<leader>", "q", "f" ],
             "after": [],
             "commands": [
                 {
@@ -696,11 +493,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "q"
-            ],
+            "before": [ "<leader>", "q", "q" ],
             "after": [],
             "commands": [
                 {
@@ -710,11 +503,7 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "r"
-            ],
+            "before": [ "<leader>", "q", "r" ],
             "after": [],
             "commands": [
                 {
@@ -959,20 +748,62 @@
                 }
             ]
         },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "h"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusPreviousGroup",
-                    "args": []
-                }
-            ]
-        },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "h"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusPreviousGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "j"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusBelowGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "k"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusAboveGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "l"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusNextGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
         {
             "before": [
                 "<leader>",
@@ -983,48 +814,6 @@
             "commands": [
                 {
                     "command": "workbench.action.moveActiveEditorGroupLeft",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "j"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusBelowGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "k"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusAboveGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusNextGroup",
                     "args": []
                 }
             ]
@@ -1071,34 +860,34 @@
                 }
             ]
         },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusNextGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "W"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusPreviousGroup",
-                    "args": []
-                }
-            ]
-        },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "w"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusNextGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "w",
+        //         "W"
+        //     ],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusPreviousGroup",
+        //             "args": []
+        //         }
+        //     ]
+        // },
         {
             "before": [
                 "<leader>",
@@ -1141,7 +930,20 @@
                 }
             ]
         },
-
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "revealFileInOS",
+                    "args": []
+                }
+            ]
+        }
     ],
     "vim.insertModeKeyBindings": [
         {
@@ -1158,7 +960,24 @@
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
     "workbench.activityBar.visible": false,
-    "editor.lineNumbers": "off",
-    "editor.folding": false,
-    "editor.glyphMargin": false
+    "editor.lineNumbers": "on",
+    "editor.folding": true,
+    "editor.glyphMargin": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontFamily": "monospace",
+    "cSpell.userWords": [
+        "com",
+        "gmail",
+        "jesselin",
+        "lerna",
+        "oist",
+        "prisma",
+        "rjhilgefort",
+        "tod",
+        "treis",
+        "whatevs"
+    ],
+    "explorer.confirmDragAndDrop": false
 }

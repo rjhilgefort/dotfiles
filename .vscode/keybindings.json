@@ -19,27 +19,28 @@
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetVisible"
     },
-    // From default settings
-    // {
-    //     "key": "ctrl+h",
-    //     "command": "list.collapse",
-    //     "when": "listFocus && !inputFocus"
-    // },
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "list.expand",
-    //     "when": "listFocus && !inputFocus"
-    // },
-    // {
-    //     "key": "ctrl+j",
-    //     "command": "list.focusDown",
-    //     "when": "listFocus && !inputFocus"
-    // },
-    // {
-    //     "key": "ctrl+k",
-    //     "command": "list.focusUp",
-    //     "when": "listFocus && !inputFocus"
-    // }
+    // ??????
+    {
+        "key": "ctrl+shift+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    // Pane Navigation
     {
         "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup"
@@ -56,19 +57,23 @@
         "key": "ctrl+l",
         "command": "workbench.action.focusRightGroup"
     },
+    // Toggle Terminal like Spacemacs
     {
         "key": "ctrl+'",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // Vim Redo
+    {
+        "key": "shift+u",
+        "command": "extension.vim_ctrl+r",
+        "when": "textInputFocus && vim.mode != 'Insert'"
+        // NOTE: default uses this but it doesn't work for me ¯\_(ツ)_/¯
+        // "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+    },
+    // Multiple Cursors
+    { 
+        "key": "ctrl+n",
+        "command": "extension.vim_cmd+d",
+        "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl" 
     }
-    // TODO: Need to only have this active in Normal Mode. Activating this disallows "U"
-    // {
-    //     "key": "shift+u",
-    //     "command": "redo",
-    //     "when": "textInputFocus && !editorReadonly"
-    // },
-    // {
-    //     "key": "shift+u",
-    //     "command": "-redo",
-    //     "when": "textInputFocus && !editorReadonly"
-    // }
 ]
