@@ -969,14 +969,21 @@
     "terminal.integrated.fontFamily": "monospace",
     "cSpell.userWords": [
         "com",
+        "cond",
+        "foxcookieco",
         "gmail",
+        "hilgefort",
         "jesselin",
         "lerna",
         "oist",
+        "pred",
         "prisma",
+        "proxied",
+        "rabbitmq",
         "rjhilgefort",
         "tod",
         "treis",
+        "validators",
         "whatevs"
     ],
     "explorer.confirmDragAndDrop": false
