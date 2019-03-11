@@ -27,9 +27,13 @@ antigen bundle zdharma/history-search-multi-word
 
 ### Theme
 # antigen theme robbyrussell
-antigen theme refined # pure
-# antigen theme powerlevel9k # TODO: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
-# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship # NOTE: A little slow to paint the git prompt
+# NOTE: pure
+# antigen theme refined
+# TODO: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
+# antigen theme powerlevel9k 
+# NOTE: A little slow to paint the git prompt
+# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship 
+antigen theme denysdovhan/spaceship-prompt
 
 # NVM bundle
 export NVM_LAZY_LOAD=true

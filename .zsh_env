@@ -1,12 +1,22 @@
-# Load NVM
+### Load NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Load avn
+### Load AVN
 # [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
 
-# Load gpg-agent
+### Load gpg-agent
 export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
 gpgconf --launch gpg-agent
 
+### spaceship-prompt
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+SPACESHIP_VI_MODE_SHOW=false
+SPACESHIP_VI_MODE_INSERT="✏️ "
+SPACESHIP_VI_MODE_NORMAL="👁️ "
+
+SPACESHIP_TIME_SHOW=false
+
+SPACESHIP_BATTERY_SHOW=true
+SPACESHIP_BATTERY_THRESHOLD=20

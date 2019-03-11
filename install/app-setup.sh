@@ -57,6 +57,9 @@ ln -sf ~/dotfiles/.avnrc ~/.avnrc
 ln -sf ~/dotfiles/bin ~/bin
 ln -sf ~/dotfiles/pm2.json ~/pm2.json
 
+# Hyper
+ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
+
 # VSCode
 # ln -sf ~/dotfiles/.vscode ~/.vscode
 ln -sf ~/dotfiles/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
