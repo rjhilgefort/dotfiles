@@ -68,7 +68,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    padding: '5px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -130,6 +130,7 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    commands: ['tmux attach-session || tmux'],
   },
 
   // a list of plugins to fetch and install from npm
@@ -138,12 +139,23 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-material-theme"],
+  plugins: [
+    "hyper-material-theme",
+    "hyperminimal",
+    // "hyper-transparent",
+    "hyper-startup"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [],
+
+  // hyperTransparent: {
+  //   backgroundColor: '#4b4',
+  //   opacity: 1,
+  //   vibrancy: 'ultra-dark' // ['', 'dark', 'medium-light', 'ultra-dark']
+  // },
 
   keymaps: {
     // Example
