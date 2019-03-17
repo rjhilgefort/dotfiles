@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "settings.cycle": [{
         "id": "lineNumbers",
@@ -963,10 +963,10 @@
     "editor.lineNumbers": "on",
     "editor.folding": true,
     "editor.glyphMargin": true,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FuraCode Nerd Font",
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
-    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontFamily": "FuraCode Nerd Font", // monospace
     "cSpell.userWords": [
         "com",
         "cond",

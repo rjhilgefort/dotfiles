@@ -1,98 +1,131 @@
+# TODO: Conditionall do this- it fails when already installed
 xcode-select --install
 
-# Homebrew
-#################################################
-
-### Check for Homebrew, install if we don't have it
+# Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 brew update
+
+### More Homebrew Repositories
 brew tap alehouse/homebrew-unofficial
 brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
+brew tap d12frosted/emacs-plus
 
-### Brews
+#############
+### Brews ###
+#############
 brews=(
-  vim
-  python@2
-  git
-  tig
-  tmux
+  ### Zsh
   zsh
   zsh-completions
   zsh-autosuggestions
   antigen
+  vim
+  emacs-plus
+
+  ### Git
+  git
+  git-extras
+  tig
+
+  ### Utilities
+  tmux
   fasd
   ag
   ranger
   pandoc
-  mongodb
-  redis
-  "yarn --without-node"
+
+  ### Languages
   ruby
-  git-extras
+  python@2             # TODO: Why?
+
+  ### Other
   most
-  mas
+  mas                  # Mac App Store installer
+
+  ### Web
+  mongodb
   postgresql
-  proxychains-ng             # https://github.com/rofl0r/proxychains-ng
-  mitmproxy                  # https://mitmproxy.org/
-  # ShapeShift
-  ansible
-  pass
-  vault
+  redis
+  yarn                  # TODO: --without-node
+
+  ### Networking
+  proxychains-ng        # https://github.com/rofl0r/proxychains-ng
+  mitmproxy             # https://mitmproxy.org/
 )
 echo "installing brews..."
 brew install ${brews[@]}
 
-### Emacs
-brew tap d12frosted/emacs-plus
-brew install emacs-plus
-
-### Casks
+#############
+### Casks ###
+#############
 casks=(
-  # RJH
+  ### Utilities
   alfred
+  hyper
+  amethyst
   bartender
-  dropbox
-  firefox
-  homebrew/cask-versions/google-chrome-beta
-  steam
-  spotify
-  skype
-  1password
-  slack
-  # synology-drive #TODO This doesn't exist
-  # davinci-resolve #TODO This doesn't exist # https://sw.blackmagicdesign.com/DaVinciResolve/v15.1.1/DaVinci_Resolve_15.1.1_Mac.zip?Key-Pair-Id=APKAJTKA3ZJMJRQITVEA&Signature=Hbe2X/xt7Zc7bsh+Q/5vDVEUB+xryG64zLL5GJ1rcgXW4iEvVt64Letc3h/T9N7qYcjlprXcE32AsE1+IZxytTavN9SRPkTWCkc87qMknWrvfsV6HKX/e0BIXfqOwUzEhHbJIdPXeKihTEjbXjxdI3B3jH+GGb0gO+UVh8estfAlPS934Lka4gj5yk1sXKo5qRM3PALjaloRauQV20K2Xvuh3rSWjLqnOxUOjZcaPF7+vm2l5mcJb7fEhqVpiyHfYnBITg/cnUmfIBfVPYeA6bn37E8YnAOrZ9PCyLhX/ZY4oHC8Fp3iDVsAkunR6cpueGIWnKFIA8k8HiNOCY2dMA==&Expires=1538971674
-  notion
-  keybase
   rocket
-  iterm2-borderless
   appcleaner
-  dash2
-  mailbutler
-  goofy
-  gitter
-  istat-menus5
+  istat-menus
   karabiner-elements
-  font-fira-code
   hammerspoon
-  cacher
-  battle-net
-  expressvpn
+  homebrew/cask-fonts/font-fira-code
+  homebrew/cask-fonts/font-firacode-nerd-font
+
+  ### Second Brain
+  1password
+  notion
   rescuetime
-  font-firacode-nerd-font
-  macdown
+
+  ### File Servers
+  dropbox
+  homebrew/cask-drivers/synology-drive
+
+  ### Development
   docker
+  visual-studio-code
+  # insomnia Name?
+  cacher
+  macdown
+  insomnia
+
+  ### Gaming
+  steam
+  battle-net
+
+  ### Media
+  spotify
+  plex-media-player
+
+  ### Communication
+  slack
+  skype
+  keybase
+  goofy
   discord
   yakyak
-  # Maaaaaybe
-  vivaldi
-  # ShapeShift
-  homebrew/cask-drivers/yubico-authenticator
-  gpg-suite
-  tunnelblick
-  exodus
+  # gitter # DNU
+
+  ### Web
+  # firefox # DNU
+  chromium
+  google-chrome
+  # vivaldi
+
+  ### VPN / Networking
+  # expressvpn
+  # tunnelblick # DNU
+
+  ### Yubikey 
+  # homebrew/cask-drivers/yubico-authenticator
+  # gpg-suite
+
+  ### Crypto
+  # exodus
 )
 echo "installing apps with Cask..."
 brew cask install ${casks[@]}
@@ -105,17 +138,23 @@ app_store_packages=(
   # TODOist
   # Toothfairy
   # Contacts Sync for Google Gmail
-  # Bear
-  # Day One
   # Pocket
   # Forecast Bar
   # Gifox
   # Airmail3
   # Fantastical
+  # Dash
+  # Tooth Fairy
 )
 echo "installing apps with App Store..."
 mas install ${app_store_packages[@]}
 
+### Ruby Gems
+# https://github.com/athityakumar/colorls#installation
+sudo gem install colorls
+
+### Python / PIP
+# sudo easy_install pip
 
 # Settings
 #################################################
@@ -129,12 +168,16 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Tracking speed +3
 # Swipe between pages with one finger
 
-### Keyboard
+################
+### Keyboard ###
+################
 # Ergodox capslock to control
 # Internal capslock to control
 # defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 # defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 # Change "Move focus to next window" to Ctrl-Tab
+### Key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 ### Trackpad
 # Three finger drag
@@ -145,13 +188,3 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 ### Dock
 # align to side
 # killall Dock
-
-### Ruby Gems
-# https://github.com/athityakumar/colorls#installation
-sudo gem install colorls
-
-### Python / PIP
-sudo easy_install pip
-# Ansible
-sudo pip install ansible boto boto3 botocore six ansible-modules-hashivault
-sudo pip install passlib

@@ -1,6 +1,7 @@
 ### NOTE: DO THIS FIRST!
 # NOTE: Download Synology Drive and link "Store" (10/07/2018)
 # https://global.download.synology.com/download/Tools/SynologyDriveClient/1.1.2-10562/Mac/Installer/synology-drive-10562.dmg
+
 # NOTE: Make sure git submodules have been installed:
 # git submodule update --init --recursive
 
@@ -9,9 +10,7 @@ ln -s ~/Store/AppData/ssh ~/.ssh
 chmod 400 ~/.ssh/id_rsa
 
 # Clone and link Dotfiles
-mkdir ~/Code
-cd ~/Code
-git clone git@github.com:rjhilgefort/dotfiles.git
+ln -sf ~/Dropbox/Code ~/Code
 ln -s ~/Code/dotfiles ~/dotfiles
 
 ### Zsh
@@ -33,10 +32,11 @@ ln -sf ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf
 ### Emacs / Spacemacs
 ln -sf ~/dotfiles/.emacs.d ~/.emacs.d
 ln -sf ~/dotfiles/.spacemacs.d ~/.spacemacs.d
-sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacs /usr/bin/emacs
-sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacs-26.1 /usr/bin/emacs-26.1
-sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacsclient /usr/bin/emacsclient
-sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/ebrowse /usr/bin/ebrowse
+# TODO: Only if necessary
+# sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacs /usr/bin/emacs
+# sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacs-26.1 /usr/bin/emacs-26.1
+# sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/emacsclient /usr/bin/emacsclient
+# sudo ln -sf /usr/local/Cellar/emacs-plus/26.1/bin/ebrowse /usr/bin/ebrowse
 # ln -sf /usr/local/opt/emacs-plus/Emacs.app /Applications
 
 ### NPM
