@@ -109,6 +109,7 @@ casks=(
   discord
   yakyak
   # gitter # DNU
+  mailspring
 
   ### Web
   # firefox # DNU
@@ -129,6 +130,9 @@ casks=(
 )
 echo "installing apps with Cask..."
 brew cask install ${casks[@]}
+
+# Need to run this manually to finish install (doesn't show up in Alfred)
+open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
 # App Store
 app_store_packages=(
