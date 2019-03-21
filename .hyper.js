@@ -130,7 +130,7 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    commands: ['tmux attach-session || tmux'],
+    // commands: ['tmux attach-session || tmux'],
   },
 
   // a list of plugins to fetch and install from npm

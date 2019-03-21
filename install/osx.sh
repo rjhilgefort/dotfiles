@@ -75,6 +75,9 @@ casks=(
   hammerspoon
   homebrew/cask-fonts/font-fira-code
   homebrew/cask-fonts/font-firacode-nerd-font
+  ubersicht # Better menu bar
+  # git clone https://github.com/zhaorz/zenbar $HOME/Library/Application\ Support/Übersicht/widgets/zenbar
+  bitbar # Applets for the menu bar
 
   ### Second Brain
   1password
@@ -155,6 +158,11 @@ sudo gem install colorls
 
 ### Python / PIP
 # sudo easy_install pip
+
+### chunkwm
+brew tap koekeishiya/formulae
+brew install --HEAD --with-tmp-logging chunkwm
+brew install --HEAD --with-logging  koekeishiya/formulae/skhd
 
 # Settings
 #################################################
