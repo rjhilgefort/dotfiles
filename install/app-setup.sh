@@ -64,3 +64,7 @@ ln -sf ~/dotfiles/.hyper.js ~/.hyper.js
 # ln -sf ~/dotfiles/.vscode ~/.vscode
 ln -sf ~/dotfiles/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -sf ~/dotfiles/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+# chunkwm / skhd
+ln -sf ~/dotfiles/.chunkwmrc ~/.chunkwmrc
+ln -sf ~/dotfiles/.skhdrc ~/.skhdrc
