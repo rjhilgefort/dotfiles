@@ -9,7 +9,7 @@ shift + alt - r : osascript -e 'display notification "⚠️ Reload️ing..." wi
                   brew services restart chunkwm;\
                   osascript -e 'display notification "♻️ Reloaded️" with title "🔎 Chunkwm" sound name "Pop"'
 
-cmd - return : /Applications/Hyper.app/Contents/MacOS/Hyper ~ &
+alt - return : /Applications/Hyper.app/Contents/MacOS/Hyper ~ &
 
 # enter fullscreen mode for the focused container
 alt - f : chunkc tiling::window --toggle fullscreen
