@@ -1,3 +1,16 @@
+#
+# NOTE: You can do notifications with sounds: https://code-maven.com/display-notification-from-the-mac-command-line
+# NOTE: Sounds live in `/System/Library/Sounds`
+# NOTE: Full example for ideas: https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
+#
+
+# reload chunkwm
+shift + alt - r : osascript -e 'display notification "⚠️ Reload️ing..." with title "🔎 Chunkwm" sound name "Tink"';\
+                  brew services restart chunkwm;\
+                  osascript -e 'display notification "♻️ Reloaded️" with title "🔎 Chunkwm" sound name "Pop"'
+
+cmd - return : /Applications/Hyper.app/Contents/MacOS/Hyper ~ &
+
 # enter fullscreen mode for the focused container
 alt - f : chunkc tiling::window --toggle fullscreen
 
@@ -42,10 +55,6 @@ shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 # resize windows
 # General docs: https://github.com/koekeishiya/chunkwm/blob/master/src/plugins/tiling/README.md#increase-region-size
 # Recipe: https://github.com/koekeishiya/chunkwm/wiki/Useful-tips-and-workarounds#resize-regions-similar-to-the-behavior-known-from-the-i3-window-manager
-alt - y : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge west; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge east
-alt - u : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge south; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge north
-alt - i : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge north; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge south
-alt - o : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge east; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge west
 shift + alt + ctrl - h : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge west; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge east
 shift + alt + ctrl - j : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge south; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge north
 shift + alt + ctrl - k : chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge north; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge south
