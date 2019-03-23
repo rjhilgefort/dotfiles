@@ -2,7 +2,7 @@
   "apps" : [
     {
       "name": "journal",
-      "cwd": "./Code/rjhilgefort/journal",
+      "cwd": "./journal",
       "script": "./node_modules/.bin/gatsby",
       "args": "develop --port 8001",
       "instances": 1,

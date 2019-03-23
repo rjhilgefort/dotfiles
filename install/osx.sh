@@ -168,6 +168,13 @@ brew tap koekeishiya/formulae
 brew install --HEAD --with-tmp-logging chunkwm
 brew install --HEAD --with-logging  koekeishiya/formulae/skhd
 
+### NPM Globals
+npm_globals=(
+  pm2
+)
+echo "installing NPM globals..."
+yarn global add pm2 ${npm_globals[@]}
+
 # Settings
 #################################################
 
@@ -185,8 +192,8 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 ################
 # Ergodox capslock to control
 # Internal capslock to control
-# defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-# defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 # Change "Move focus to next window" to Ctrl-Tab
 ### Key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
