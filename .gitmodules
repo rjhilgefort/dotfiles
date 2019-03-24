@@ -15,3 +15,6 @@
 [submodule ".spacemacs.d"]
 	path = .spacemacs.d
 	url = git@github.com:rjhilgefort/.spacemacs.git
+[submodule ".chunkwm"]
+	path = .chunkwm
+	url = git@github.com:rjhilgefort/.chunkwm.git

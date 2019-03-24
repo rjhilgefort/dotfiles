@@ -165,8 +165,8 @@ sudo gem install colorls
 
 ### chunkwm
 brew tap koekeishiya/formulae
-brew install --HEAD --with-tmp-logging chunkwm
-brew install --HEAD --with-logging  koekeishiya/formulae/skhd
+brew install --HEAD chunkwm
+brew install --HEAD koekeishiya/formulae/skhd
 
 ### NPM Globals
 npm_globals=(
