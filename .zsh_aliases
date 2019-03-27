@@ -176,12 +176,10 @@ alias git-whoami='echo "Current user: $(git config user.email)"'
 # gitconfig switching
 git-config-rjh() {
   ln -sf ~/dotfiles/.gitconfig.rjhilgefort ~/.gitconfig
-  killall gpg-agent && echo 'gpg-agent stopped'
   git-whoami
 }
-git-config-ss() {
-  ln -sf ~/dotfiles/.gitconfig.oramified-fcc ~/.gitconfig
-  gpgconf --launch gpg-agent && echo 'gpg-agent started'
+git-config-pwc() {
+  ln -sf ~/dotfiles/.gitconfig.pwc ~/.gitconfig
   git-whoami
 }
 

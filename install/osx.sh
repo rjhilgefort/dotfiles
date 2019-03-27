@@ -95,6 +95,7 @@ casks=(
   cacher
   macdown
   insomnia
+  dash
 
   ### Gaming
   steam

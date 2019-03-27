@@ -1,11 +1,7 @@
 [user]
-  name = oramified 
-  email = oramified.fcc@gmail.com
-  signingkey = 968CC068
 
-[commit]
-  # Forces you to Yubikey touch on each commit
-  # gpgsign = true
+	name = Rob Hilgefort
+	email = rob.hilgefort@pwc.com
 
 [alias]
 
@@ -142,15 +138,6 @@
 
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
-
-[difftool]
-
-	prompt = false
-
-[mergetool]
-
-	keepBackup = false
-	prompt = false
 
 [push]
 
