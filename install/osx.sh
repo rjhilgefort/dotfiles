@@ -78,6 +78,7 @@ casks=(
   ubersicht # Better menu bar
   # git clone https://github.com/zhaorz/zenbar $HOME/Library/Application\ Support/Übersicht/widgets/zenbar
   bitbar # Applets for the menu bar
+  keycastr
 
   ### Second Brain
   1password
