@@ -63,3 +63,6 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Always list after cd
 cd() { builtin cd "$@"; colorls -A --sort-dirs; }
+
+export YVM_DIR=/Users/rhilgefort001/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh

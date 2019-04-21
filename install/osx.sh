@@ -173,6 +173,7 @@ brew install --HEAD koekeishiya/formulae/skhd
 ### NPM Globals
 npm_globals=(
   pm2
+  dockly
 )
 echo "installing NPM globals..."
 yarn global add pm2 ${npm_globals[@]}
