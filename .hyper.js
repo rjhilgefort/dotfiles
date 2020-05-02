@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     // fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    fontFamily: '"FuraCode Nerd Font", monospace',
+    fontFamily: '"FuraCode Nerd Font", Dank Mono, monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -91,7 +91,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF"
+      lightWhite: "#FFFFFF",
     },
 
     // https://github.com/equinusocio/hyper-material-theme
@@ -110,7 +110,7 @@ module.exports = {
       // [Optional] Mac Only. Need restart. Enable the vibrance and blurred background
       // OPTIONS: 'dark', 'ultra-dark', 'bright'
       // NOTE: The backgroundOpacity should be between 0.1 and 0.9 to see the effect.
-      vibrancy: "dark"
+      vibrancy: "dark",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -141,7 +141,7 @@ module.exports = {
     copyOnSelect: false,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true
+    defaultSSHApp: true,
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -160,7 +160,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-material-theme", "hyperminimal", "hyper-startup"],
+  plugins: [
+    "hyper-material-theme",
+    "hyperminimal",
+    "hyper-startup",
+    // https://github.com/jaanauati/hyper-search
+    "hyper-search",
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -170,5 +176,5 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-  }
+  },
 };

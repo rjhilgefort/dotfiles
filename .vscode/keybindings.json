@@ -71,9 +71,24 @@
         // "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
     },
     // Multiple Cursors
-    { 
+    {
         "key": "ctrl+n",
         "command": "extension.vim_cmd+d",
-        "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl" 
+        "when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+cmd+v",
+        "command": "extension.pasteImage",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+v",
+        "command": "-extension.pasteImage",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+v",
+        "command": "-extension.pasteImage",
+        "when": "editorTextFocus"
     }
 ]

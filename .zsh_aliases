@@ -14,9 +14,11 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 # Trim new lines and copy to clipboard
 alias copy="tr -d '\n' | pbcopy"
 
+
 ### colorls - https://github.com/athityakumar/colorls
+# TODO: Check out https://the.exa.website/
 # Move standard ls
-alias ols="ls"
+alias old_ls="ls"
 # Base formats
 alias ls="colorls -A"           # short, multi-line
 alias ll="colorls -1A"          # list, 1 per line
@@ -37,6 +39,10 @@ alias lsg="ls --git-status"
 alias llg="ll --git-status"
 alias ldg="ld --git-status"
 alias lag="la --git-status"
+
+### bat - alternative to cat
+alias old_cat="cat"
+alias cat="bat"
 
 # General
 alias cl="clear"
@@ -201,3 +207,23 @@ cheat() {
     curl cht.sh/$1
 }
 
+
+# https://gist.github.com/premek/6e70446cfc913d3c929d7cdbfe896fef
+# Usage: mv oldfilename
+# If you call mv without the second parameter it will prompt you to edit the filename on command line.
+# Original mv is called when it's called with more than one argument.
+# It's useful when you want to change just a few letters in a long name.
+#
+# Also see:
+# - imv from renameutils
+# - Ctrl-W Ctrl-Y Ctrl-Y (cut last word, paste, paste)
+function mv () {
+  echo "i'm running"
+  if [ "$#" -ne 1 ] || [ ! -e "$1" ]; then
+    command mv "$@"
+    return
+  fi
+
+  read -ei "$1" newfilename
+  command mv -v -- "$1" "$newfilename"
+}

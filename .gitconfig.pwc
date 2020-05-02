@@ -109,6 +109,12 @@
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
 
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -166,3 +172,5 @@
 	pushInsteadOf = "git://bitbucket.org/"
 [url "git://bitbucket.org/"]
 	insteadOf = "bitbucket:"
+[cola]
+	spellcheck = false

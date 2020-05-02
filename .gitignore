@@ -2,10 +2,9 @@
 .aws/credentials
 .zsh_secret
 .config/yarn
-.config/configstore/update-notifier-bower.json
-.config/configstore/update-notifier-npm.json
-.config/configstore/update-notifier-hpm-cli.json
-.config/configstore/update-notifier-gatsby-cli.json
+.config/configstore/update-notifier-*
 .config/configstore/nodemon.json
-.config/karabiner/automatic_backups/karabiner_20190322.json
+.config/joplin-desktop/
+.config/karabiner/automatic_backups/
 .config/karabiner/assets/complex_modifications/1553267323.json
+bin/stunredis

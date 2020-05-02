@@ -1,0 +1,27 @@
+{
+    "bookmarks": [],
+    "gui_state": {
+        "mainview": {
+            "geometry": "AdnQywADAAAAAANyAAACIgAACmIAAAfFAAADcgAAAjgAAApiAAAHxQAAAAAAAAAADwAAAANyAAACOAAACmIAAAfF",
+            "width": 1777,
+            "height": 1422,
+            "x": 882,
+            "y": 546,
+            "lock_layout": false,
+            "windowstate": "AAAA/wAAAAL9AAAAAgAAAAIAAAbxAAACxvwBAAAAA/sAAAAMAFMAdABhAHQAdQBzAQAAAAAAAACKAAAAaAAAIAD7AAAADABDAG8AbQBtAGkAdAEAAACNAAADTwAAAIwA/////AAAA98AAAMSAAAAoQD////6AAAAAAEAAAAE+wAAABAAQgByAGEAbgBjAGgAZQBzAQAAAAD/////AAAAjQD////7AAAAFABTAHUAYgBtAG8AZAB1AGwAZQBzAQAAAAD/////AAAAoQD////7AAAAEgBGAGEAdgBvAHIAaQB0AGUAcwAAAAAA/////wAAAJ8A////+wAAAAwAUgBlAGMAZQBuAHQAAAAAAP////8AAAB+AP///wAAAAMAAAbxAAACxfwBAAAAAvsAAAAIAEQAaQBmAGYBAAAAAAAABvEAAABkAP////wAAAAA/////wAAAAAA////+v////8BAAAAAvsAAAAOAEEAYwB0AGkAbwBuAHMAAAAAAP////8AAABbAP////sAAAAOAEMAbwBuAHMAbwBsAGUAAAAAAP////8AAABfAP///wAABvEAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA",
+            "show_status_filter": false,
+            "toolbars": [],
+            "ref_sort": 0,
+            "show_diff_line_numbers": false,
+            "image_diff_mode": 0,
+            "image_zoom_mode": 0
+        }
+    },
+    "recent": [
+        {
+            "name": "dcf-platform",
+            "path": "/Users/rhilgefort001/Dropbox/Code/pwc/dcf-platform"
+        }
+    ],
+    "copy_formats": []
+}
