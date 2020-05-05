@@ -880,7 +880,7 @@
       "after": ["<Esc>"]
     }
   ],
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
   "editor.parameterHints.enabled": false,
